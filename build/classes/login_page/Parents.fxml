@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="325.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login_page.ParentController">
+   <children>
+      <TabPane prefHeight="350.0" prefWidth="528.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Ward">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="77.0" layoutY="38.0" prefHeight="17.0" prefWidth="210.0" />
+                        <ListView layoutX="100.0" layoutY="45.0" prefHeight="232.0" prefWidth="329.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Roommates">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="56.0" layoutY="43.0" prefHeight="233.0" prefWidth="422.0">
+                          <columns>
+                            <TableColumn prefWidth="139.0" text="Name" />
+                            <TableColumn prefWidth="110.0" text="SNU ID" />
+                              <TableColumn minWidth="1.0" text="Contact Info" />
+                              <TableColumn minWidth="0.0" prefWidth="92.0" text="Mail ID" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab id="faculty" fx:id="faculty" text="Faculty">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutY="-1.0" prefHeight="324.0" prefWidth="528.0" side="LEFT" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Department wise">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ComboBox fx:id="drop" layoutX="14.0" layoutY="25.0"  prefHeight="25.0" prefWidth="184.0" promptText="Select the Department" />
+                                       </children></AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="My Ward's Department">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              </content>
+                            </Tab>
+                              <Tab text="By Name">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Hostel Warden">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="40.0" layoutY="46.0" prefHeight="217.0" prefWidth="450.0">
+                          <columns>
+                            <TableColumn prefWidth="54.0" text="Hostel" />
+                            <TableColumn prefWidth="155.0" text="Name" />
+                              <TableColumn prefWidth="146.0" text="Mail ID" />
+                              <TableColumn prefWidth="94.0" text="Contact Info" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

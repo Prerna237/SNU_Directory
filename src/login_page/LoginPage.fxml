@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="333.0" prefWidth="324.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login_page.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="61.0" layoutY="206.0" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="201.0" text="Login" />
+        <Label fx:id="label" layoutX="96.0" layoutY="243.0" minHeight="16" minWidth="69" prefHeight="17.0" prefWidth="131.0" textAlignment="CENTER" textFill="#f20404" />
+      <TextField id="Username" fx:id="Username" layoutX="61.0" layoutY="129.0" prefHeight="25.0" prefWidth="201.0" promptText="Username" />
+      <PasswordField id="Password" fx:id="Password" layoutX="61.0" layoutY="160.0" prefHeight="25.0" prefWidth="201.0" promptText="Password" />
+      <Label layoutX="75.0" layoutY="293.0" prefHeight="18.0" prefWidth="175.0" text="One University . One Account" textFill="#4f11fa">
+         <font>
+            <Font name="Baskerville Old Face" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="63.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
